@@ -1,0 +1,192 @@
+<?php
+
+# Php Syntax
+# Variables & Data Types
+# Constants
+# String and Math Functions
+# Operators / same lang din sa javascript operators / comparison operators
+# same lang din yung ternary operator sa javascript
+# If statements / switch statement is same lang sa javascript
+# Loops
+# Var Dumps
+# Arrays - different from javascript
+# Functions
+
+$test = 'This is hello world'; //string
+$x = 10; //integer
+$z = 10.5; //floating point
+$y = true; //boolean
+#this a comment
+//this also a comment
+/* this also
+an another comment
+*/
+
+// define('title', 'Php Demo'); //constant variable
+// echo rand(1, 10);
+// echo title;
+
+// $age = 15;
+
+// if ($age >= 18) {
+//     echo "You are an adult.";
+// } else {
+//     echo "You are a minor.";
+// }
+
+// $counter = 5;
+
+// while ($counter > 0) {
+//     echo $counter--;
+// }
+
+// for ($ctr = 0; $ctr < 10; $ctr++) {
+//     echo $ctr;
+// }
+
+# Arrays
+
+// 1. Indexed Arrays
+$fruits = array('Apple', 'Mango', 'Banana'); //echo will work only on strings
+
+// var_dump($fruits);
+// echo $fruits[1];
+// var_dump($fruits[1])
+
+// for ($i = 0; $i < count($fruits); $i++) {
+//     echo $fruits[$i];
+// }
+
+// 2. Associative Arrays
+
+// $students = array(
+//     'Reyson' => 100,
+//     'Joseph' => 90,
+//     'Karlu' => 80
+// );
+
+// echo $students['Joseph'];
+
+$settings = array(
+    'brightness' => 50,
+    'power' => false,
+    'contrast' => 75,
+    'hdr' => true,
+);
+
+// echo $settings['contrast'];
+
+// var_dump($settings['contrast']);
+
+// foreach ($settings as $settings) {
+//     echo $settings;
+//     // var_dump($settings);
+// }
+
+//operand support only integers
+
+// echo 'hello' . " world"; concatenation in strings
+
+// function greet()
+// {
+//     echo "hello world!";
+// }
+
+// function greet($name)
+// {
+//     echo "hello " . $name;
+// }
+
+// function greet($name)
+// {
+//     return "Hello " . $name;
+// }
+
+// function greet($name = 'friend') default value
+// {
+//     return 'Hello ' . $name;
+// }
+
+// echo greet();
+
+# walang arrow function sa php
+
+// $data = array(
+//     'username' => 'reyson123',
+//     'password' => '12345'
+// );
+
+// echo json_encode($data);
+
+?>
+
+
+
+
+
+
+
+
+// $friends = array(
+//     'peopleOne' => array(
+//         'name' => 'Shayne Roman',
+//         'age' => 19,
+//     ),
+//     'peopleTwo' => array(
+//         'name' => 'Mark Joshua Ragas',
+//         'age' => 190,
+//     ),
+//     'peopleThree' => array(
+//         'name' => 'Jirov Magtibay',
+//         'age' => 23,
+//     ),
+// );
+
+// foreach ($friends as $friends) {
+//     echo $friends['name'] . ' ' . $friends['age'] . '<br>';
+// }
+
+
+// function highNumber($numbers)
+// {
+
+
+//     for ($i = 0; $i < count($numbers); $i++) {
+//         if ($numbers[$i] % 3 === 0 && $numbers[$i] % 5 === 0) {
+//             echo $numbers[$i] . ' is divisible by 5 and 3 <br>';
+//         } else if ($numbers[$i] % 3 === 0) {
+//             echo $numbers[$i] . ' is divisible by 3 <br>';
+//         } else if ($numbers[$i] === 5) {
+//             echo $numbers[$i] . ' is divisible by 5 <br>';
+//         }
+//     }
+
+
+
+
+// }
+
+// echo highNumber(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15));
+
+// $age = array("Peter" => '35', "Ben" => "37", "Joe" => "43");
+
+// foreach ($age as $age => $val) {
+//     echo $age . ' = ' . $val . '<br>';
+// }
+
+$cars = array(
+    array("Volvo", 22, 18),
+    array("BMW", 15, 13),
+    array("Saab", 5, 2),
+    array("Land Rover", 17, 15),
+);
+
+for ($row = 0; $row < 4; $row++) {
+    echo "<p><b>Row number $row</b></p>";
+    echo "<ul>";
+    for ($col = 0; $col < 3; $col++) {
+        echo "<li>" . $cars[$row][$col] . "</li>";
+    }
+
+    echo "</ul>";
+}
